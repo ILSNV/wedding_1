@@ -3,6 +3,11 @@
     src: url(../fonts/Jun_Regular.otf);
 }
 
+@font-face {
+    font-family: 'Mr';
+    src: url(../fonts/mr_hamiltoneg.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +15,7 @@
 }
 
 body {
-
+    font-family: 'JUN';
 }
 
 .wrap {
@@ -18,6 +23,7 @@ body {
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 .preloader {
@@ -178,5 +184,54 @@ body {
 }
 
 .header {
-    
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__name {
+        display: block;
+        margin: 0 auto;
+        max-width: 192px;
+        padding-top: 80px;
+    }
+
+    &__hand {
+        display: block;
+        width: 100%;
+    }
+
+    &__bottom {
+        padding-bottom: 20px;
+    }
+
+    &__bottom-text {
+        text-align: center;
+        font-family: 'Mr';
+        font-size: clamp(1.75rem, 0.424rem + 6.63vw, 2.5rem);
+        margin-bottom: 15px;
+    }
+
+    &__bottom-date {
+        text-align: center;
+        font-size: clamp(1.125rem, 0.02rem + 5.52vw, 1.75rem);
+        padding-top: 80px;
+    }
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 40px;
+
+    &__block {
+        p {
+            font-size: clamp(1.25rem, -0.076rem + 6.63vw, 2rem);
+        }
+
+        span {
+            font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
+        }
+    }
 }
