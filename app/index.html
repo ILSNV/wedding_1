@@ -14,8 +14,22 @@
     <link rel="stylesheet" href="css/style.min.css">
     <title>Wedding Day</title>
 </head>
-<div class="wrap"></div>
+
 <body>
+    <div class="wrap">
+        <div class="preloader">
+            <div class="preloader__inner">
+                <span class="loader"></span>
+                <p class="preloader__text">Loading
+                    <a id="span1">.</a>
+                    <a id="span2">.</a>
+                    <a id="span3">.</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+
 
     <script src="js/wow.min.js"></script>
     <script>
@@ -30,6 +44,8 @@
         )
         wow.init();
     </script>
+
+    <script src="js/preloader.js"></script>
 </body>
 
 </html>
