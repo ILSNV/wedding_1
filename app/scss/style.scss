@@ -330,6 +330,29 @@ body {
     margin-bottom: 35px;
 }
 
+.timing {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 80px;
+
+    &__title {
+        margin-bottom: 15px;
+        font-family: 'Mr';
+        text-align: center;
+        font-size: clamp(2.875rem, 0.665rem + 11.05vw, 4.125rem);
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+        padding: 0 20px;
+    }
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
 @media (min-width: 501px) and (max-height: 850px) {
     .header__name {
         padding-top: 30px;
