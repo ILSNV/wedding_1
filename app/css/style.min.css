@@ -327,6 +327,27 @@ body::before {
   font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
 }
 
+.invite {
+  padding-top: 60px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 2;
+}
+.invite__title {
+  margin-bottom: 20px;
+  font-family: "Mr";
+  text-align: center;
+  font-size: clamp(2.875rem, 0.665rem + 11.05vw, 4.125rem);
+}
+.invite__subtitle {
+  text-align: center;
+  font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 501px) and (max-height: 850px) {
   .header__name {
     padding-top: 30px;
