@@ -1,22 +1,24 @@
 <?php
 
-$token = "7630915875:AAE3BV0Ta9KKEPmRSaHJrgUMty5rmq9GXRA";
-$chat_id = "-4900020029";
+$token = "7975433616:AAEVUajyEGNlZdpgBrmTE5igpo5RichQhP8";
+$chat_id = "-4881610651";
 
 $name = $_POST["name"];
 $answer = $_POST['invite'];
+$guest = $_POST['guest'];
+$ceremony = $_POST['ceremony'];
+$photo = $_POST['photo'];
+$dinner = $_POST['dinner'];
 $alco = $_POST['alco'];
-$alcogol = '';
-$alergy = $_POST['alergy'];
-$wish  = $_POST['wish'];
-
 
 $arr = array(
-    'Гости:' => $name,
+    'ФИО:' => $name,
     'Ответ:' => $answer,
-    'Алкоголь:' => $res,
-    'Аллергия:' => $alergy, 
-    'Предпочтения на вечер:' => $wish, 
+    'Гости:' => $guest,
+    'Регистрация:' => $ceremony,
+    'Фотосессия и прогулка:' => $photo,
+    'Банкет:' => $dinner,
+    'Алкоголь:' => $alco,
 );
 
 foreach($arr as $key => $value) {
