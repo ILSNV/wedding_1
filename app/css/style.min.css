@@ -478,6 +478,7 @@ body::before {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0;
+  outline: none;
 }
 .form__group input[type=text]::-webkit-input-placeholder {
   color: #8D8D8D;

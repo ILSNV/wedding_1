@@ -418,6 +418,7 @@ body {
         -moz-appearance: none;
         appearance: none;
         border-radius: 0;
+        outline: none;
 
         &::placeholder {
             color: #8D8D8D;
