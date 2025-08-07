@@ -348,6 +348,19 @@ body::before {
   margin-bottom: 15px;
 }
 
+.calendar {
+  position: relative;
+  z-index: 2;
+  padding-bottom: 40px;
+}
+.calendar__img {
+  display: block;
+  width: 100%;
+  max-width: 410px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
 @media (min-width: 501px) and (max-height: 850px) {
   .header__name {
     padding-top: 30px;
