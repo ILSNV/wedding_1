@@ -291,7 +291,7 @@ body {
     position: relative;
     z-index: 2;
     padding-bottom: 80px;
-    
+
     &__title {
         font-size: clamp(2.625rem, 0.968rem + 8.29vw, 3.563rem);
         text-align: center;
@@ -351,6 +351,35 @@ body {
 
 .mb-40 {
     margin-bottom: 40px;
+}
+
+
+.wish {
+    padding-bottom: 80px;
+    position: relative;
+    z-index: 2;
+
+    &__title {
+        font-size: clamp(2.625rem, 0.968rem + 8.29vw, 3.563rem);
+        text-align: center;
+        font-family: 'Mr';
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        text-align: center;
+        font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
+    }
+
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+}
+
+.mb-10 {
+    margin: 10px;
 }
 
 @media (min-width: 501px) and (max-height: 850px) {
@@ -418,7 +447,7 @@ body {
     }
 }
 
-@media (max-width: 400px){
+@media (max-width: 400px) {
     .place__map iframe {
         height: 300px;
     }
