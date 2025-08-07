@@ -24,4 +24,8 @@ window.addEventListener('load', () => {
         blockSeconds.innerHTML = seconds;
     }, 1000);
 
+    let header = document.querySelector('.header');
+    let h = header.clientHeight;
+    header.style.height = `${h}px`;
+
 });
