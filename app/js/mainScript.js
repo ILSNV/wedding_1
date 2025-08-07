@@ -1,4 +1,6 @@
 window.addEventListener('load', () => {
+    new WOW().init();
+
     let blockDays = document.querySelector(".timer__days");
     let blockHours = document.querySelector(".timer__hours");
     let blockMinutes = document.querySelector(".timer__minutes");
