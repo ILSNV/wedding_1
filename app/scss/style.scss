@@ -353,7 +353,6 @@ body {
     margin-bottom: 40px;
 }
 
-
 .wish {
     padding-bottom: 80px;
     position: relative;
@@ -380,6 +379,89 @@ body {
 
 .mb-10 {
     margin: 10px;
+}
+
+.rsvp {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 80px;
+
+    &__title {
+        font-size: clamp(2.625rem, 0.968rem + 8.29vw, 3.563rem);
+        text-align: center;
+        font-family: 'Mr';
+        margin-bottom: 20px;
+    }
+}
+
+.form {
+    width: 100%;
+    padding: 0 20px;
+
+    &__group {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
+    }
+
+    &__group input[type='text'] {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid #000;
+        padding-bottom: 3px;
+        font-family: 'JUN';
+        font-size: clamp(0.875rem, 0.433rem + 2.21vw, 1.125rem);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border-radius: 0;
+
+        &::placeholder {
+            color: #8D8D8D;
+        }
+    }
+
+    &__radio-group {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        column-gap: 14px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        span {
+            font-size: clamp(0.875rem, 0.433rem + 2.21vw, 1.125rem);
+        }
+
+        input {
+            width: 20px;
+            height: 20px;
+            accent-color: #000;
+        }
+    }
+
+    &__submit {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button {
+        background-color: transparent;
+        border: 1px solid #000;
+        color: #000;
+        font-size: clamp(0.938rem, 0.385rem + 2.76vw, 1.25rem);
+        border-radius: 50px;
+        padding: 13px 35px;
+        font-weight: normal;
+        font-family: 'JUN';
+        cursor: pointer;
+    }
 }
 
 @media (min-width: 501px) and (max-height: 850px) {
@@ -451,6 +533,11 @@ body {
     .place__map iframe {
         height: 300px;
     }
+
+    .form__radio-group input {
+        width: 17px;
+        height: 17px;
+    }
 }
 
 @media (max-width: 350px) {
@@ -460,6 +547,10 @@ body {
 
     .header {
         height: 100svh;
+    }
+
+    .form {
+        padding: 0 15px;
     }
 }
 

@@ -141,12 +141,109 @@
                 мы улетаем.
             </p>
 
-            <p class="wish__text"> 
+            <p class="wish__text">
                 Будем рады Вашему присутствию с хорошим <br>
                 настроением без цветов.
             </p>
 
             <img src="images/wish_icon.svg" alt="" class="wish__icon">
+        </div>
+
+        <div class="rsvp">
+            <p class="rsvp__title">Анкета гостя</p>
+
+            <form action="send.php" method="post" class="form">
+
+                <div class="form__group">
+                    <p class="form__title">Ваше фамилия и имя</p>
+
+                    <input type="text" name="name" required minlength="2" placeholder="Введите имя и фамилию">
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">
+                        Сможете ли Вы присутствовать на нашем
+                        <br> торжестве?
+                    </p>
+
+                    <label class="form__radio-group">
+                        <input type="radio" name="invite" checked value="Да, с удовольствием">
+                        <span>Да, с удовольствием</span>
+                    </label>
+
+                    <label class="form__radio-group">
+                        <input type="radio" name="invite" value="К сожалению, нет">
+                        <span>К сожалению, нет</span>
+                    </label>
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">Будет ли с Вами кто-то еще?</p>
+
+                    <input type="text" name="guest" placeholder="Введите имена и фамилии">
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">
+                        Будете ли Вы присутствовать на <br>
+                        торжественной регистрации?
+                    </p>
+
+                    <label class="form__radio-group">
+                        <input type="radio" checked name="ceremony" value="Да">
+                        <span>Да</span>
+                    </label>
+
+                    <label class="form__radio-group">
+                        <input type="radio" name="ceremony" value="Нет">
+                        <span>Нет</span>
+                    </label>
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">
+                        Примете ли Вы участие в фотосессии и <br>
+                        прогулке по городу?
+                    </p>
+
+                    <label class="form__radio-group">
+                        <input type="radio" checked name="photo" value="Да">
+                        <span>Да</span>
+                    </label>
+
+                    <label class="form__radio-group">
+                        <input type="radio" name="photo" value="Нет">
+                        <span>Нет</span>
+                    </label>
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">
+                        Будете ли Вы присутствовать на праздничном <br>
+                        банкете?
+                    </p>
+
+                    <label class="form__radio-group">
+                        <input type="radio" checked name="dinner" value="Да">
+                        <span>Да</span>
+                    </label>
+
+                    <label class="form__radio-group">
+                        <input type="radio" name="dinner" value="Нет">
+                        <span>Нет</span>
+                    </label>
+                </div>
+
+                <div class="form__group">
+                    <p class="form__title">Что предпочитаете из алкоголя?</p>
+                    <input type="text" name="alco" placeholder="Шампанское">
+                </div>
+
+                <div class="form__submit">
+                    <button class="form__button" type="submit">Отправить </button>
+                </div>
+
+            </form>
         </div>
     </div>
 
